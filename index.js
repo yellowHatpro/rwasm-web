@@ -1,4 +1,4 @@
-import {Universe} from "rwasm";
+import { Universe } from "rwasm";
 
 const pre = document.getElementById("game-of-life-canvas");
 const universe = Universe.new();
