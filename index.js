@@ -1,12 +1,12 @@
-import {Universe}  from "rwasm";
+import { Universe } from "rwasm";
 
 const pre = document.getElementById("game-of-life-canvas");
 const universe = Universe.new();
 
 const renderLoop = () => {
-    pre.textContent = universe.render();
-    universe.tick();
+  pre.textContent = universe.render();
+  universe.tick();
 
-    requestAnimationFrame(renderLoop);
+  requestAnimationFrame(renderLoop);
 };
 requestAnimationFrame(renderLoop);
